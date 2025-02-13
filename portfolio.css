@@ -1,0 +1,251 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    /* color: #fbf9f9; */
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #3498db;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px;
+    background-color: black;
+    /* background-image: url('vector-illustration-urban-architecture-cityscape-600nw-1621311928.webp'); Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-attachment: scroll; /* Allows the image to scroll with the content */
+   
+}
+
+#about .profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#about .text h1 {
+    font-size: 2.5rem;
+    color: #f7f2f2;
+}
+
+#about .text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #777;
+}
+
+/* Skills Section */
+#skills {
+    background-color:white;
+    padding: 60px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: #97cde7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    color: rgb(11, 11, 11);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 10px; /* Added margin for better spacing */
+    
+    
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: 7px;
+    border-radius: 26px;
+    
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+/* Other Sections */
+section {
+    padding: 40px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project, .internship-entry, .education-entry {
+    
+    display: flex;
+    align-items: right;
+    margin-bottom: 30px;
+}
+
+.project img, .internship-entry img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Contact Section */
+#contact form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contact button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #3498db;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Global Styles for Projects Section */
+#projects {
+    padding: 40px;
+    background-color: white;
+
+    
+}
+
+/* Styling for Project Description */
+.project-description {
+    margin-bottom: 20px;
+    width: 30%;
+    font-size: 15px;
+    margin-right: 4%;
+
+}
+
+/* Grid layout for images */
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 20px; /* Space between cards */
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Card styles for images */
+.card {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on images */
+.card img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .skills-container, .project-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card, .card {
+        width: 90%;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+}
+.hello{
+    justify-content: right;
+    margin-left: 40%;
+    font-size: 100px;
+    font-style: oblique;
+    color: white;
+}
+/* Button Styling */
+.certificate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.certificate-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
