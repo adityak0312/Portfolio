@@ -114,7 +114,9 @@ section {
 
 section h2 {
     text-align: center;
+    color: #f4f4f4;
     margin-bottom: 30px;
+    background-color: rgb(3, 71, 88);
 }
 
 .project, .internship-entry, .education-entry {
